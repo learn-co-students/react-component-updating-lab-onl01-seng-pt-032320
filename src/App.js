@@ -58,9 +58,7 @@ class App extends Component {
   updateIntervalSetting = increment => {
     this.setState(prevState => {
       if (prevState.updateInterval + increment <= 1) return { updateInterval: 1 }
-      return {
-        updateInterval: prevState.updateInterval + increment
-      }
+      return { updateInterval: prevState.updateInterval + increment }
     })
   }
 
